@@ -11,15 +11,15 @@
 
     if (isset($_POST['continue'])) {
         set_cookie('dark');
-        header('location: /Personal/Projects/grabip/');
+        header("Refresh:0");
     }
     if (isset($_POST['theme'])) {
         if ($_POST['type'] === 'dark') {
             set_cookie('dark');
-            header('location: /Personal/Projects/grabip/');
+            header("Refresh:0");
         } elseif ($_POST['type'] === 'light') {
             set_cookie('light');
-            header('location: /Personal/Projects/grabip/');
+            header("Refresh:0");
         }
     }
 ?>

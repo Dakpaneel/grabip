@@ -3,7 +3,7 @@
     require_once 'php/cookies.php';
     require_once 'php/ip.php';
     require_once 'php/theme.php';
-    $version = 'v1.0'; // Last updated: 06/06/2019
+    $version = 'v1.1'; // Last updated: 07/06/2019
     $copyright = date('Y').' &copy; <a href="https://www.bradleyoosterveen.nl/">bradleyoosterveen.nl</a>';
     /**
      * TODO

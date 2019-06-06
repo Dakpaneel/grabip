@@ -1,5 +1,5 @@
 <header>
-    <form class="theme" action="php/cookies.php" method="POST">
+    <form class="theme" action="" method="POST">
         <?php if($_COOKIE['theme'] == 'dark') {?>
             <input type="hidden" name="type" value="light">
             <input name="theme" type="submit" value="">
