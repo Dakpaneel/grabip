@@ -1,0 +1,27 @@
+.popup .title{
+    color: #222;
+}
+.popup .text {
+    color: #222;
+}
+.popup input {
+    color: #222;
+    border-color: #222;
+}
+
+
+body {
+    background: white;
+}
+body header{
+    color: #222;
+}
+body main .small-text {
+    color: #222;
+}
+body main .big-text {
+    color: #222;
+}
+body footer, a {
+    color: #222;
+}

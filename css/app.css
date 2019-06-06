@@ -1,0 +1,197 @@
+html {
+  min-height: 100vh;
+  max-height: 100vh;
+  font-family: 'Prompt', sans-serif;
+}
+
+html * {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html body .overlay .popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 800px;
+  width: 100%;
+}
+
+html body .overlay .popup .container {
+  padding: 20px;
+}
+
+html body .overlay .popup .container .title {
+  font-size: 48px;
+}
+
+html body .overlay .popup .container .text {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+html body .overlay .popup .container form input {
+  font-family: inherit;
+  font-size: 16px;
+  border: 2px solid;
+  border-radius: 6px;
+  background: transparent;
+  outline: none;
+  padding: 10px 40px;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+html body .overlay .popup .container form input:hover {
+  opacity: 0.5;
+}
+
+html body .wrapper header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 12px;
+  font-size: 32px;
+}
+
+html body .wrapper header .theme {
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+
+html body .wrapper header .theme input {
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+}
+
+html body .wrapper header .theme input, html body .wrapper header .theme i {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+}
+
+html body .wrapper header .theme input:hover + i {
+  opacity: 0.5;
+}
+
+html body .wrapper main {
+  height: 100vh;
+  width: 100vw;
+}
+
+html body .wrapper main .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+html body .wrapper main .container .small-text {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 40px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  opacity: 0.5;
+}
+
+html body .wrapper main .container .big-text {
+  float: left;
+  font-weight: 500;
+  font-size: 96px;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+html body .wrapper main .container .big-text .ip::-moz-selection {
+  background: transparent;
+}
+
+html body .wrapper main .container .big-text .ip::selection {
+  background: transparent;
+}
+
+html body .wrapper main .container .big-text i {
+  margin-left: 20px;
+  font-size: 48px;
+}
+
+html body .wrapper main .container .big-text:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 1200px) {
+  html body .wrapper main .container {
+    text-align: center;
+  }
+  html body .wrapper main .container .big-text {
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html body .wrapper main .container .small-text {
+    font-size: 24px;
+  }
+  html body .wrapper main .container .big-text {
+    font-size: 40px;
+  }
+}
+
+html body .wrapper footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+}
+
+html body .wrapper footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body .wrapper footer .container span {
+  width: 100%;
+  font-weight: 300;
+}
+
+html body .wrapper footer .container .version {
+  text-align: right;
+  width: 32px;
+}
+
+html body .wrapper footer .container .copyright {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+html body .wrapper footer .container a {
+  text-decoration: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+html body .wrapper footer .container a:hover {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=app.css.map */

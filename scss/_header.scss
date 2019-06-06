@@ -1,0 +1,28 @@
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 12px;
+    font-size: 32px;
+    .theme {
+        width: 32px;
+        height: 32px;
+        position: relative;
+        input {
+            z-index: 1;
+            opacity: 0;
+            cursor: pointer;
+        }
+        input, i {
+            transition: 0.1s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 32px;
+            height: 32px;
+        }
+        input:hover + i {
+            opacity: 0.5;
+        }
+    }
+}

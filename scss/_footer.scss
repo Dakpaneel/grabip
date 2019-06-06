@@ -1,0 +1,27 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 12px;
+    .container {
+        display: flex;
+        span {
+            width: 100%;
+            font-weight: 300;
+        }
+        .version {
+            text-align: right;
+            width: 32px;
+        }
+        .copyright {
+            flex-grow: 1;
+        }
+        a {
+            text-decoration: none;
+            transition: 0.1s;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
