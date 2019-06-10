@@ -172,6 +172,7 @@ html body .wrapper footer .container {
 html body .wrapper footer .container span {
   width: 100%;
   font-weight: 300;
+  opacity: 0.6;
 }
 
 html body .wrapper footer .container .version {
