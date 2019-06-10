@@ -1,5 +1,5 @@
 html {
-  overflow: hidden;
+  position: absolute;
   min-height: 100vh;
   max-height: 100vh;
   font-family: 'Prompt', sans-serif;
@@ -10,6 +10,26 @@ html * {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow: hidden;
+}
+
+html body {
+  position: fixed;
+}
+
+html body .notification {
+  position: absolute;
+  top: 56px;
+  right: -400px;
+  margin: 20px;
+}
+
+html body .notification .container {
+  text-align: center;
+  font-size: 16px;
+  border: 2px solid;
+  border-radius: 6px;
+  padding: 10px 40px;
 }
 
 html body .overlay .popup {
@@ -50,21 +70,6 @@ html body .overlay .popup .container form input {
 
 html body .overlay .popup .container form input:hover {
   opacity: 0.5;
-}
-
-html body .wrapper .notification {
-  position: absolute;
-  top: 56px;
-  right: -400px;
-  margin: 20px;
-}
-
-html body .wrapper .notification .container {
-  text-align: center;
-  font-size: 16px;
-  border: 2px solid;
-  border-radius: 6px;
-  padding: 10px 40px;
 }
 
 html body .wrapper header {
@@ -173,7 +178,7 @@ html body .wrapper main .container .big-text:hover {
 }
 
 html body .wrapper footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   padding: 12px;

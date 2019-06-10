@@ -3,7 +3,7 @@
     require_once 'php/cookies.php';
     require_once 'php/ip.php';
     require_once 'php/theme.php';
-    $version = 'v1.2'; // Last updated: 07/06/2019
+    $version = 'v1.3'; // Last updated: 10/06/2019
     $copyright = date('Y').' &copy; <a href="https://www.bradleyoosterveen.nl/">bradleyoosterveen.nl</a>';
     /**
      * TODO
@@ -13,7 +13,7 @@
      * X Main
      * X Footer
      * X Popup when no cookies
-     * - Popup when IP placed in clipboard
+     * X Popup when IP placed in clipboard
      * X Dark / Light theme
      * - SEO
      * X Responsive
@@ -33,13 +33,13 @@
 
     <body>
 
+        <?php require_once 'templates/notification.php';?>
         <?php if(!isset($_COOKIE['theme'])) {?>
             <div class="overlay">
                 <?php require_once 'templates/popup.php';?>
             </div>
         <?php } else {?>
             <div class="wrapper">
-                <?php require_once 'templates/notification.php';?>
                 <?php require_once 'templates/header.php';?>
                 <?php require_once 'templates/main.php';?>
                 <?php require_once 'templates/footer.php';?>

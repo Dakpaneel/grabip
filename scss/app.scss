@@ -1,19 +1,21 @@
 html {
-    overflow: hidden;
+    position: absolute;
     * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        overflow: hidden;
     }
     min-height: 100vh;
     max-height: 100vh;
     font-family: 'Prompt', sans-serif;
     body {
+        position: fixed;
+        @import 'notification';
         .overlay {
             @import 'popup';
         }
         .wrapper {
-            @import 'notification';
             @import 'header';
             @import 'main';
             @import 'footer';
