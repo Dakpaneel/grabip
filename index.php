@@ -13,6 +13,7 @@
      * X Main
      * X Footer
      * X Popup when no cookies
+     * - Popup when IP placed in clipboard
      * X Dark / Light theme
      * - SEO
      * X Responsive
@@ -38,6 +39,7 @@
             </div>
         <?php } else {?>
             <div class="wrapper">
+                <?php require_once 'templates/notification.php';?>
                 <?php require_once 'templates/header.php';?>
                 <?php require_once 'templates/main.php';?>
                 <?php require_once 'templates/footer.php';?>
@@ -46,7 +48,7 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-        <script>var clipboard = new ClipboardJS('.big-text');</script><script>document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });</script>
+        <script>var clipboard = new ClipboardJS('.clipboard');</script><script>document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });</script>
         <script src="js/app.js"></script>
     </body>
 </html>

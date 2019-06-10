@@ -1,3 +1,7 @@
+.notification *{
+    color: #222;
+}
+
 .popup .title{
     color: #222;
 }
