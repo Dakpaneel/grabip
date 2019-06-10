@@ -33,13 +33,13 @@
 
     <body>
 
-        <?php require_once 'templates/notification.php';?>
         <?php if(!isset($_COOKIE['theme'])) {?>
             <div class="overlay">
                 <?php require_once 'templates/popup.php';?>
             </div>
         <?php } else {?>
             <div class="wrapper">
+                <?php require_once 'templates/notification.php';?>
                 <?php require_once 'templates/header.php';?>
                 <?php require_once 'templates/main.php';?>
                 <?php require_once 'templates/footer.php';?>

@@ -11,11 +11,13 @@ html {
     font-family: 'Prompt', sans-serif;
     body {
         position: fixed;
-        @import 'notification';
+        width: 100%;
+        height: 100vh;
         .overlay {
             @import 'popup';
         }
         .wrapper {
+            @import 'notification';
             @import 'header';
             @import 'main';
             @import 'footer';

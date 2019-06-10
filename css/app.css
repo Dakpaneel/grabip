@@ -15,21 +15,8 @@ html * {
 
 html body {
   position: fixed;
-}
-
-html body .notification {
-  position: absolute;
-  top: 56px;
-  right: -400px;
-  margin: 20px;
-}
-
-html body .notification .container {
-  text-align: center;
-  font-size: 16px;
-  border: 2px solid;
-  border-radius: 6px;
-  padding: 10px 40px;
+  width: 100%;
+  height: 100vh;
 }
 
 html body .overlay .popup {
@@ -70,6 +57,21 @@ html body .overlay .popup .container form input {
 
 html body .overlay .popup .container form input:hover {
   opacity: 0.5;
+}
+
+html body .wrapper .notification {
+  position: absolute;
+  top: 56px;
+  right: -400px;
+  margin: 20px;
+}
+
+html body .wrapper .notification .container {
+  text-align: center;
+  font-size: 16px;
+  border: 2px solid;
+  border-radius: 6px;
+  padding: 10px 40px;
 }
 
 html body .wrapper header {
