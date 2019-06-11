@@ -5,27 +5,12 @@
     require_once 'php/theme.php';
     $version = 'v1.3'; // Last updated: 10/06/2019
     $copyright = date('Y').' &copy; <a href="https://www.bradleyoosterveen.nl/">bradleyoosterveen.nl</a>';
-    /**
-     * TODO
-     * X Show IP
-     * X Copy IP
-     * X Header
-     * X Main
-     * X Footer
-     * X Popup when no cookies
-     * X Popup when IP placed in clipboard
-     * X Dark / Light theme
-     * - SEO
-     * X Responsive
-     * X ICO
-     * X Link to this GIT
-     */
 ?>
 <!DOCTYPE html>
 <html>
 
     <head>
-<title>GrabIP</title>
+<title>IP &bull; <?=get_ip()?></title>
 <?=meta()?>
 <link rel="shortcut icon" type="image/x-icon" href="ico/icon.ico">
 <?=load_theme()?>
