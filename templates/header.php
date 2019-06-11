@@ -4,10 +4,14 @@
             <input type="hidden" name="type" value="light">
             <input name="theme" type="submit" value="">
             <i class="fas fa-sun"></i>
-        <?php } else {?>
+        <?php } else if($_COOKIE['theme'] == 'light'){?>
             <input type="hidden" name="type" value="dark">
             <input name="theme" type="submit" value="">
             <i class="fas fa-moon"></i>
+        <?php } else {?>
+            <input type="hidden" name="type" value="dark">
+            <input name="theme" type="submit" value="">
+            <i class="fas fa-undo-alt"></i>
         <?php }?>
         </form>
 </header>

@@ -1,0 +1,31 @@
+.notification *{
+    color: #FBD907;
+}
+
+.popup .title{
+    color: #FBD907;
+}
+.popup .text {
+    color: #FBD907;
+}
+.popup input {
+    color: #FBD907;
+    border-color: #FBD907;
+}
+
+
+body {
+    background: #FF122E;
+}
+body header{
+    color: #FBD907;
+}
+body main .small-text {
+    color: #FBD907;
+}
+body main .big-text {
+    color: #FBD907;
+}
+body footer, a {
+    color: #FBD907;
+}
