@@ -1,0 +1,31 @@
+.notification *{
+    color: #0DBEF3;
+}
+
+.popup .title{
+    color: #0DBEF3;
+}
+.popup .text {
+    color: #0DBEF3;
+}
+.popup input {
+    color: #0DBEF3;
+    border-color: #0DBEF3;
+}
+
+
+body {
+    background: #C1EBF6;
+}
+body header{
+    color: #0DBEF3;
+}
+body main .small-text {
+    color: #0DBEF3;
+}
+body main .big-text {
+    color: #0DBEF3;
+}
+body footer, a {
+    color: #0DBEF3;
+}
